@@ -9,7 +9,7 @@
     <!-- This app's styles -->
 	<link href="styles/main.css" rel="stylesheet" /> 
 </head>
-<body onload="initialize();">
+<body onload="">
 	<!-- Define each tab -->
 	<div data-role="view" id="tabstrip-home" data-title="Home">
 		<h1>Hello, World! App content goes here.</h1>
@@ -44,24 +44,6 @@
 
     <!-- Kendo UI JavaScript -->
     <script src="http://cdn.kendostatic.com/2013.2.716/js/kendo.all.min.js"></script>
-    <script type="text/javascript">
-			// PhoneGap is ready - begin using plugins here
-			function onDeviceReady() {
-				
-			}
-
-			function initialize() {
-				// register device ready event - called when PhoneGap is fully loaded
-				document.addEventListener("deviceready", onDeviceReady, false);
-			}
-	</script>
-	
-    <script type="text/javascript">
-		// initialize kendo mobile app - only line needed to get started
-        var app = new kendo.mobile.Application(document.body, { transition: "slide", layout: "mobile-tabstrip" });
-		
-		// other init code:
-		
-    </script>
+   
 </body>
 </html>
